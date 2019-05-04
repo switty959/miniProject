@@ -1,12 +1,12 @@
 
 public class Teacher extends Person {
 
-	private int numberOfClass;
+	private int numberOfClass = 3;
 	private int id;
 	
-	public Teacher(String tempName, int tempNumberOfClass, int tempId) {
+	public Teacher(String tempName, int tempId) {
 		super(tempName);
-		setNumberOfClass(tempNumberOfClass);
+		setNumberOfClass(numberOfClass);
 		setId(tempId);
 		Main.teacherid++;
 	}
